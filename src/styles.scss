@@ -15,6 +15,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     justify-content: space-between;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
 .flex-column {
     flex-direction: column;
 }
@@ -31,9 +35,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin-top: 2rem !important;
 }
 
-.pb-2 {
-    padding-bottom: 2rem !important;
+.pad-2 {
+    padding: 1rem;
 }
+
 
 .large-font {
     font-size: 3.5rem !important;
@@ -45,4 +50,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .w-75 {
     width: 75%;
+}
+
+.mat-toolbar {
+    padding: .5rem;
 }

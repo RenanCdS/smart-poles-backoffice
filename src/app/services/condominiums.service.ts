@@ -13,7 +13,7 @@ export class CondominiumsService {
 
   constructor(private readonly http: HttpClient) { }
 
-  getCondomoniums(): Observable<Condominium[]> {
+  getCondominiums(): Observable<Condominium[]> {
     return this.http.get<CondominiumsResponse>(`${environment.api.baseUrl}/condominiums`).pipe(
       map(condominiumsResponse => {
         return condominiumsResponse.condominiums;
