@@ -1,0 +1,5 @@
+<h1 mat-dialog-title>Deseja realmente deletar o condomínio com código {{data.code}} ?</h1>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Não</button>
+  <button mat-button [mat-dialog-close]="{code: data.code}" cdkFocusInitial>Sim</button>
+</div>

@@ -8,11 +8,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { DeleteCondominiumComponent } from './components/delete-condominium/delete-condominium.component';
+import { UpdateCondominiumComponent } from './components/update-condominium/update-condominium.component';
+import { InsertCondominiumComponent } from './components/insert-condominium/insert-condominium.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListCondominiumsPageComponent
+    ListCondominiumsPageComponent,
+    DeleteCondominiumComponent,
+    UpdateCondominiumComponent,
+    InsertCondominiumComponent
   ],
   imports: [
     BrowserModule,

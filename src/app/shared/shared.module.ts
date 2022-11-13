@@ -10,6 +10,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatDialogModule} from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
 
 const modules = [
   MatIconModule,
@@ -21,7 +23,9 @@ const modules = [
   MatNativeDateModule,
   MatSnackBarModule,
   MatPaginatorModule,
-  MatTableModule
+  MatTableModule,
+  MatDialogModule,
+  FormsModule
 ];
 
 @NgModule({

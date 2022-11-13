@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Atualizar condomínio</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="fill">
+      <mat-label>Código</mat-label>
+      <input matInput disabled [(ngModel)]="code">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="name">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancelClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="{code: code, name: name}" cdkFocusInitial>Atualizar</button>
+</div>
